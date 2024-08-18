@@ -1,0 +1,20 @@
+{
+    "name": "invoice-generator",
+    "version": "1.0.0",
+    "description": "A simple invoice generator website.",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "body-parser": "^1.19.0",
+      "express": "^4.17.1",
+      "html-pdf": "^2.2.0"
+    },
+    "engines": {
+      "node": ">=10.0.0"
+    },
+    "author": "Your Name",
+    "license": "ISC"
+  }
+  

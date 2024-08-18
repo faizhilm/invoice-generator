@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Invoice Generator</h1>
+        <form id="invoiceForm">
+            <div>
+                <label for="companyName">Company Name:</label>
+                <input type="text" id="companyName" name="companyName" required>
+            </div>
+            <div>
+                <label for="clientName">Client Name:</label>
+                <input type="text" id="clientName" name="clientName" required>
+            </div>
+            <div>
+                <label for="invoiceDate">Date:</label>
+                <input type="date" id="invoiceDate" name="invoiceDate" required>
+            </div>
+            <div id="items">
+                <h2>Items</h2>
+                <div class="item">
+                    <input type="text" name="description" placeholder="Description" required>
+                    <input type="number" name="quantity" placeholder="Quantity" required>
+                    <input type="number" name="price" placeholder="Unit Price" required>
+                </div>
+            </div>
+            <button type="button" id="addItem">Add Item</button>
+            <button type="submit">Generate PDF</button>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
